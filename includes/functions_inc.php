@@ -1,11 +1,9 @@
 <?php
 /**
- * gmaaa_inc.php is the main include file for the new GMAA app
  * 
- * This file based on application_inc.php, for the INTL application online app
  *
  *
- * @package School-Inter-DB
+ * @package School-Intern-DB
  * @author Joe McLaughlin
  * @version 1.00 2016 - March 10th
  * @link http://www.joesarchive.com/testdb.php
@@ -22,10 +20,7 @@
  * 
  * </code>
  *
- * @para	MySQL-Row	$row
- * @param	String		$full_name
- * @param	String		$contact_info
- * @param	String		$user_type
+ * @param	MySQL-Row	$row
  */
 function createUserRowList($row){
 	echo 
