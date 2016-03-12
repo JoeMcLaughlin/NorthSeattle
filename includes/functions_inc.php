@@ -27,12 +27,12 @@
  * @param	String		$contact_info
  * @param	String		$user_type
  */
-function createUserRow($row){
+function createUserRowList($row){
 	echo 
 		"firstName: " .$row["FirstName"].
 		"<br>". " - Last: " . $row["LastName"].
 		"<br>". " ContactInfo: " . $row["ContactInfo"] .
-		"<br>". "<a href=" . 'view.php?id=' . $row['UserId']. '> Details:</a>'
+		"<br>". "<a href=" . 'testview.php?id=' . $row['UserId']. '> Details:</a>'
 
 
 
