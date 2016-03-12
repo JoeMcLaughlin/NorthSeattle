@@ -42,8 +42,41 @@ function createUserRowList($row){
 }
 
 
+//$row[TypeId] 
+function determineUserType($row){
+	switch($row){
+		case 1:
+			return "Admin?-1";
+			break;
+		case 2:
+			return "Admin?-2";
+			break;
+		case 3:
+			return "Admin?-3";
+			break;
+	
+	}
+}
 
 
+function userDetails($row,$result){
+	
+	echo "Full Name : " . $row[FirstName] . " " . $row[LastName] . "<br>";
+	echo "Contact Info : " . $row[ContactInfo] . "<br>";
+	echo "User Type : " . determineUserType($row[TypeId]) . "<br>" . "<br>";
+	if(mysqli_num_rows($result) >0){
+		echo  "<a href=" . 'testview.php?id=' . ($row['UserId'] -1) . '> prev</a>';
+	}
+	if(mysqli_num_rows($result) < $row['UserId']+1){
+
+		echo "&emsp;&emsp;&emsp;". "<a href=" . 'testview.php?id=' . ($row['UserId'] + 1) . '> next</a>';
+	}
+
+
+
+
+	
+}
 
 
 ?>
