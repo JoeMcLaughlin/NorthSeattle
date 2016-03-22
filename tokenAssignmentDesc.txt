@@ -1,0 +1,26 @@
+Joe McLaughlin
+WordCount
+
+how did you go about starting this project?
+A: I researched HashMaps and how they work.
+
+what works and what doesn’t?
+A:N/A
+
+what are the test cases you created for this assignment?
+A:N/A
+
+did these test cases help you verify the correctness of your results?
+A:N/A
+
+the surprises or problems you encountered while implementing this application
+I had to put the while loop for the scanner inside of the WordCount, because if it was outside of it it would keep looking for a next until i entered a blank line, The other option would have been to put "Press enter to exit" and used that for the conditional statement in the while loop instead of hasNext()
+
+the most important thing(s) you learned from this assignment
+A:Immutable objects, autoboxing/autounboxing
+
+what you would do differently next time?
+A:I feel I did this one well.
+
+
+
